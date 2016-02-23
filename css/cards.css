@@ -18,26 +18,37 @@ body{
 .fh5co-social li{
   float:right;
 }
-  .fh5co-social .icon{
-    font-size: 22pt !important;
+.fh5co-social .icon{
+  font-size: 22pt !important;
+}
+@media screen and (max-width: 480px) {
+  .p-t-mobile
+  {
+    padding-top: 100px !important;
   }
+
+  .p-t-2-mobile
+  {
+    padding-top: 200px !important;
+  }
+}
 
 .inline-icon{
   vertical-align: middle;
 }
 
 .nav-contact-item {
-    color:white;
-    padding: 0;
-    margin: 0;
-    font-size: 68.333% !important;
+  color:white;
+  padding: 0;
+  margin: 0;
+  font-size: 68.333% !important;
 }
 
 .subtitle {
-    color:white;
-    padding: 0;
-    margin: 0;
-    font-size: 88.333% !important;
+  color:white;
+  padding: 0;
+  margin: 0;
+  font-size: 88.333% !important;
 }
 
 .fh5co-link-wrap ul li a{
