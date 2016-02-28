@@ -21,6 +21,7 @@ body{
 .corsario-social .icon{
   font-size: 22pt !important;
 }
+
 @media screen and (max-width: 480px) {
   .p-t-mobile
   {
@@ -86,10 +87,26 @@ div.pd-secondary-page{
   fill: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  a.svg-container *{
+    width: auto;;
+    height: auto;
+  }
+
+  .logo .svg-container *{
+    width: 100%;
+  }
+
+  .afterNav{
+    padding-top: 15%;
+  }
+}
+
 
 .js-full-height{
   position: relative;
 }
+
 /*
 ///////////////////////////////////////////////////
 
