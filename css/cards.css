@@ -83,7 +83,13 @@ div.pd-secondary-page{
 
   .logo .svg-container *{
     position: absolute;
-    top: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 60%;
+    margin: auto;
     z-index: 20;
   }
 
