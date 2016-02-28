@@ -55,6 +55,26 @@ body{
   font-size: 85% !important;
 }
 
+.text-white, .text-white * {
+  color:white;
+}
+
+.text-black, .text-black * {
+  color:black;
+}
+
+div.pd-secondary-page{
+  padding: 15em 0;
+}
+
+.ship-container *{
+  width: 100%;
+  height: auto;
+}
+
+.svg-gray *{
+  fill: #3e3e3e;
+}
 
 
 .js-full-height{
@@ -1054,7 +1074,7 @@ a:hover .lnk-icon-right {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(43, 96, 247, 0.4);
   z-index: 4;
 }
 
