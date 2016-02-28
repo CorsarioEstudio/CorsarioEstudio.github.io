@@ -32,6 +32,10 @@ body{
   {
     padding-top: 200px !important;
   }
+
+  div.afterNav{
+    padding-top: 60% !important;
+  }
 }
 
 .inline-icon{
@@ -64,6 +68,10 @@ body{
   color:black;
 }
 
+.text-gray, .text-gray * {
+  color:#3e3e3e;
+}
+
 div.pd-secondary-page{
   padding: 15em 0;
 }
@@ -90,7 +98,7 @@ div.pd-secondary-page{
 @media screen and (max-width: 992px) {
   a.svg-container *{
     width: auto;;
-    height: auto;
+    height: 100%;
   }
 
   .logo .svg-container *{
@@ -98,10 +106,9 @@ div.pd-secondary-page{
   }
 
   .afterNav{
-    padding-top: 15%;
+    padding-top: 30% !important;
   }
 }
-
 
 .js-full-height{
   position: relative;
@@ -149,12 +156,12 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2:not(.cover-text-sublead), h3, h4, h5, h6 {
   margin: 0 0 30px 0;
   padding: 0;
   /*font-family: "Montserrat", Arial, sans-serif;*/
-  font-family: lovatolight;
-  font-weight: 700;
+  font-family: "Lato";
+  text-transform: uppercase;
   color: #262626;
 }
 
@@ -756,7 +763,7 @@ a:hover .lnk-icon-right {
   position: absolute;
   z-index: 8;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
   .corsario-nav-style-1, .corsario-nav-style-2 {
@@ -1036,10 +1043,11 @@ a:hover .lnk-icon-right {
   /*min-height: 800px;*/
 }
 .corsario-cover .corsario-cover-text .cover-text-lead {
-  font-size: 40px;
+  font-size: 49px;
   /*font-family: "Montserrat", Arial, sans-serif;*/
-  font-family: lovatolight;
-  font-weight: 700;
+  font-family: Lato;
+  text-transform: uppercase;
+  letter-spacing: 10px;
   color: #fff;
 }
 .corsario-cover .corsario-cover-text .cover-text-sublead {
