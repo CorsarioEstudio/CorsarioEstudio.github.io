@@ -1,30 +1,19 @@
 ---
 layout: default
 ---
-
-<div id="presentation" class="corsario-cover corsario-cover-style-2 js-full-height p-t-mobile afterNav" data-next="yes">
-  <span class="scroll-btn fadeInUp hidden-xs">
-    <a href="#">
-      <span class="mouse"><span></span></span>
-    </a>
-    <br/>
-  </span>
+<div id="presentation" class="corsario-cover corsario-cover-style-2 js-full-height p-t-mobile afterNav" data-self="yes">
   <div class="corsario-overlay"></div>
   <div class="corsario-cover-text">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 js-full-height text-center visible-md visible-lg">
-          <div class="svg-container" style="padding-top:20%;">
-            {% include illustration-ship.svg %}
-          </div>
+        <div class="col-md-12 js-full-height text-center js-full-height back">
+          <div class="ship-illustration" data-stellar-ratio="0.4"></div>
         </div>
-        <div class="col-md-6 col-sm-12 col-xs-12 full-height js-full-height text-center">
+        <div class="col-md-12 col-sm-12 col-xs-12 full-height js-full-height text-center">
           <div class="corsario-cover-intro">
             <hr class="visible-xs" style="border:0;">
-            <h1 class="cover-text-lead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Salta a bordo</h1>
-            <h2 class="cover-text-sublead wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Somos un grupo de disenadores y desarrolladores con pasion por crear soluciones. Contamos con los conocimientos y experiencias necesarias para llevar sus ideas a la realidad.</h2>
             <br>
-            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s"><a href="#" class="btn btn-primary btn-outline btn-lg">Nuestro trabajo</a></p>
+            <h1 class="cover-text-lead wow fadeInUp" id="leadText" data-wow-duration="1s" data-wow-delay=".3s">Salta a bordo</h1>
           </div>
         </div>
       </div>
@@ -32,214 +21,292 @@ layout: default
   </div>
 </div>
 
-<div class="corsario-features-style-2 js-full-height" data-next="yes" style="padding-bottom:0;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 text-justify">
-        <h2 class="corsario-heading wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Sobre nosotros</h2>
-        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">En Corsario Estudio <b>creamos</b>.
-        Observamos los problemas que se le presentan a nuestros clientes, investigamos las posibles causas y finalmente <b>creamos soluciones.</b>
-        Tomamos ideas geniales y salimos a analizar los mercados, interactuamos con posibles usuarios y armamos un plan de accion para de esa idea <b>crear un producto.</b>
-        Asi que dinos,<b> ¿que quieres crear?</b></p>
-        <a href="#" class="wow fadeInUp text-justify" data-wow-duration="1s" data-wow-delay=".9s">Mas sobre nosotros <i class="inline-icon icon-chevron-right2"></i> </a>
-      </div>
-      <br class="visible-sm">
-      <div class="col-md-6 text-justify">
-        <div class="svg-container svg-gray">
-            {% include illustration-us.svg %}
+<div class="contenido" data-midnight="bg-white">
+  <div class="corsario-features-style-2 js-full-height" style="padding-bottom:0;" data-self="yes">
+    <div>
+      <div>
+        <div class="col-md-6 text-justify">
+          <div class="svg-container svg-gray">
+            {% include svg/illustration-us.svg %}
+          </div>
+        </div>
+
+        <hr class="visible-sm visible-xs">
+
+        <div class="col-md-6 text-justify">
+          <h2 class="corsario-heading wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Sobre nosotros</h2>
+          <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">En Corsario Estudio <b>creamos</b>.
+            Observamos los problemas que se le presentan a nuestros clientes, investigamos las posibles causas y finalmente <b>creamos soluciones.</b>
+            Tomamos ideas geniales y salimos a analizar los mercados, interactuamos con posibles usuarios y armamos un plan de accion para de esa idea <b>crear un producto.</b>
+            Asi que dinos,<b> ¿que quieres crear?</b></p>
+            <a href="#" class="wow fadeInUp text-justify" data-wow-duration="1s" data-wow-delay=".9s">Mas sobre nosotros <i class="inline-icon icon-chevron-right2"></i> </a>
+          </div>
         </div>
       </div>
 
+      <span class="scroll-btn fadeInUp hidden-xs">
+        <a href="#">
+          <span class="ancla">
+            <img src="images/ancla.svg" />
+          </span>
+        </a>
+        <br/>
+      </span>
+    </div>
+
+    <div class="corsario-project-style-2 js-full-height" data-self="yes">
+      <div class="container">
+        <div class="row p-b">
+          <div class="col-md-6 text-justify">
+            <h2 class="corsario-heading wow fadeInUp text-left" data-wow-duration="1s">Proyectos en progreso</h2>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">En Corsario Estudio creamos. Generamos soluciones a problemas y satisfacemos necesidades, pero nuestro foco principal es la creación, la innovación. El crear un producto nuevo, de principio a fin, es nuestra mayor satisfacción.</p>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"><a href="#">Nuestros proyectos <i class="inline-icon icon-chevron-right2"></i></a></p>
+          </div>
+          <div class="col-md-6">
+            <div class="video-overlay"></div>
+            <video id="videoGloob" loop>
+              <source src="videos/vid-gloob.mp4" type="video/mp4"/>
+              Tu explorador no acepta la etiqueta video
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <span class="scroll-btn fadeInUp hidden-xs">
+        <a href="#">
+          <span class="ancla">
+            <img src="images/ancla.svg" />
+          </span>
+        </a>
+        <br/>
+      </span>
+    </div>
+
+    <div class="corsario-testimonial-style-2 js-full-height" data-self="yes">
+      <div class="container">
+        <div class="row p-b">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2 class="corsario-heading wow fadeInUp" data-wow-duration="1s">Clientes satisfechos</h2>
+            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Nuestra mayor responsabilidad es que nuestros clientes, tanto nacionales e internacionales, reciban el mejor servicio posible y que nuestros productos superen sus expectativas. Por eso nos enorgullecemos de cada trabajo bien hecho.</p>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" id="testimonials-carousel">
+
+          <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
+            <div class="corsario-testimonial-item">
+              <div class="corsario-name">
+                <img src="images/person_5.jpg" alt="">
+                <div class="corsario-meta">
+                  <h3>Chris Clark</h3>
+                  <span class="corsario-company">XYZ Inc.</span>
+                </div>
+              </div>
+              <div class="corsario-text">
+                <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+          <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
+            <div class="corsario-testimonial-item">
+              <div class="corsario-name">
+                <img src="images/person_4.jpg" alt="">
+                <div class="corsario-meta">
+                  <h3>Ian Stewart</h3>
+                  <span class="corsario-company">XYZ Inc.</span>
+                </div>
+              </div>
+              <div class="corsario-text">
+                <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;</p>
+              </div>
+            </div>
+          </div>
+          <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
+            <div class="corsario-testimonial-item">
+              <div class="corsario-name">
+                <img src="images/person_3.jpg" alt="">
+                <div class="corsario-meta">
+                  <h3>Mitch Silk</h3>
+                  <span class="corsario-company">XYZ Inc.</span>
+                </div>
+              </div>
+              <div class="corsario-text">
+                <p>&ldquo;Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+          <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
+            <div class="corsario-testimonial-item">
+              <div class="corsario-name">
+                <img src="images/person_1.jpg" alt="">
+                <div class="corsario-meta">
+                  <h3>Beth Glasgow</h3>
+                  <span class="corsario-company">XYZ Inc.</span>
+                </div>
+              </div>
+              <div class="corsario-text">
+                <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;</p>
+              </div>
+            </div>
+          </div>
+          <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
+            <div class="corsario-testimonial-item">
+              <div class="corsario-name">
+                <img src="images/person_2.jpg" alt="">
+                <div class="corsario-meta">
+                  <h3>Rob Smith</h3>
+                  <span class="corsario-company">XYZ Inc.</span>
+                </div>
+              </div>
+              <div class="corsario-text">
+
+                <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+          <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
+            <div class="corsario-testimonial-item">
+              <div class="corsario-name">
+                <img src="images/person_6.jpg" alt="">
+                <div class="corsario-meta">
+                  <h3>Colleen Bass</h3>
+                  <span class="corsario-company">XYZ Inc.</span>
+                </div>
+              </div>
+              <div class="corsario-text">
+                <p>&ldquo;Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="scroll-btn fadeInUp hidden-xs">
+        <a href="#">
+          <span class="ancla">
+            <img src="images/ancla.svg" />
+          </span>
+        </a>
+        <br/>
+      </span>
     </div>
   </div>
+  <!-- END page-->
 
-  <span class="scroll-btn black wow fadeInUp hidden-xs" data-wow-duration="1s" data-wow-delay="1.2s">
-    <a href="#">
-      <span class="mouse-black"><span></span></span>
-    </a>
-    <br/>
-  </span>
-</div>
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <!-- Stellar -->
+  <script src="js/jquery.stellar.min.js"></script>
+  <!-- countTo -->
+  <script src="js/jquery.countTo.js"></script>
+  <!-- WOW -->
+  <script src="js/wow.min.js"></script>
+  <!-- Fullscreen Overlay -->
+  <script src="js/fullscreen-overlay.js"></script>
+  <!-- Gradient Background -->
+  <script src="js/gradient-bg.js"></script>
+  <!-- Auto Typing -->
+  <script src="js/typed.min.js"></script>
+  <script>
 
-<div class="corsario-project-style-2 js-full-height" data-next="yes">
-  <div class="container">
-    <div class="row p-b">
-      <div class="col-md-6 text-justify">
-        <h2 class="corsario-heading wow fadeInUp text-left" data-wow-duration="1s">Proyectos en progreso</h2>
-        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">En Corsario Estudio creamos. Generamos soluciones a problemas y satisfacemos necesidades, pero nuestro foco principal es la creación, la innovación. El crear un producto nuevo, de principio a fin, es nuestra mayor satisfacción.</p>
-        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"><a href="#">Nuestros proyectos <i class="inline-icon icon-chevron-right2"></i></a></p>
-      </div>
-      <div class="col-md-6">
-        <div class="video-overlay"></div>
-        <video id="videoGloob" loop>
-         <source src="videos/vid-gloob.mp4" type="video/mp4">
-        Tu explorador no acepta la etiqueta video
-        </video>
-      </div>
+  var waypoint = new Waypoint({
+    element: document.getElementById('videoGloob'),
+    handler: function(direction) {
+      this.element.play();
+    },
+    offset: '25%'
+  });
 
-    </div>
-  </div>
+  var waypoint2 = new Waypoint({
+    element: $(".contenido")[0],
+    handler: function(direction) {
+      if (direction == "down") {
+        $(".header").addClass("bg-white");
+      }
+      else {
+        $(".header").removeClass("bg-white");
+      }
+    }
+  });
 
-  <span class="scroll-btn black wow fadeInUp hidden-xs" data-wow-duration="1s" data-wow-delay="1.2s">
-    <a href="#">
-      <span class="mouse-black"><span></span></span>
-    </a>
-    <br/>
-  </span>
-</div>
 
-<div class="corsario-testimonial-style-2" data-next="yes">
-  <div class="container">
-    <div class="row p-b">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <h2 class="corsario-heading wow fadeInUp" data-wow-duration="1s">Clientes satisfechos</h2>
-        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Nuestra mayor responsabilidad es que nuestros clientes, tanto nacionales e internacionales, reciban el mejor servicio posible y que nuestros productos superen sus expectativas. Por eso nos enorgullecemos de cada trabajo bien hecho.</p>
-      </div>
-    </div>
-    <div class="owl-carousel owl-theme wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" id="testimonials-carousel">
 
-      <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
-        <div class="corsario-testimonial-item">
-          <div class="corsario-name">
-            <img src="images/person_5.jpg" alt="">
-            <div class="corsario-meta">
-              <h3>Chris Clark</h3>
-              <span class="corsario-company">XYZ Inc.</span>
-            </div>
-          </div>
-          <div class="corsario-text">
-            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-          </div>
-        </div>
-      </div>
-      <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
-        <div class="corsario-testimonial-item">
-          <div class="corsario-name">
-            <img src="images/person_4.jpg" alt="">
-            <div class="corsario-meta">
-              <h3>Ian Stewart</h3>
-              <span class="corsario-company">XYZ Inc.</span>
-            </div>
-          </div>
-          <div class="corsario-text">
-            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;</p>
-          </div>
-        </div>
-      </div>
-      <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
-        <div class="corsario-testimonial-item">
-          <div class="corsario-name">
-            <img src="images/person_3.jpg" alt="">
-            <div class="corsario-meta">
-              <h3>Mitch Silk</h3>
-              <span class="corsario-company">XYZ Inc.</span>
-            </div>
-          </div>
-          <div class="corsario-text">
-            <p>&ldquo;Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-          </div>
-        </div>
-      </div>
-      <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
-        <div class="corsario-testimonial-item">
-          <div class="corsario-name">
-            <img src="images/person_1.jpg" alt="">
-            <div class="corsario-meta">
-              <h3>Beth Glasgow</h3>
-              <span class="corsario-company">XYZ Inc.</span>
-            </div>
-          </div>
-          <div class="corsario-text">
-            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;</p>
-          </div>
-        </div>
-      </div>
-      <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
-        <div class="corsario-testimonial-item">
-          <div class="corsario-name">
-            <img src="images/person_2.jpg" alt="">
-            <div class="corsario-meta">
-              <h3>Rob Smith</h3>
-              <span class="corsario-company">XYZ Inc.</span>
-            </div>
-          </div>
-          <div class="corsario-text">
+  changeBackground($("#presentation")[0]);
 
-            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-          </div>
-        </div>
-      </div>
-      <div class="item col-md-offset-3 col-md-9 col-sm-9 col-xs-12">
-        <div class="corsario-testimonial-item">
-          <div class="corsario-name">
-            <img src="images/person_6.jpg" alt="">
-            <div class="corsario-meta">
-              <h3>Colleen Bass</h3>
-              <span class="corsario-company">XYZ Inc.</span>
-            </div>
-          </div>
-          <div class="corsario-text">
-            <p>&ldquo;Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- END page-->
+  changeBackground($(".menu__brand")[0]);
 
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- Owl Carousel -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- Magnific Popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<!-- Stellar -->
-<script src="js/jquery.stellar.min.js"></script>
-<!-- countTo -->
-<script src="js/jquery.countTo.js"></script>
-<!-- WOW -->
-<script src="js/wow.min.js"></script>
-<!-- Fullscreen Overlay -->
-<script src="js/fullscreen-overlay.js"></script>
-<!-- Gradient Background -->
-<script src="js/gradient-bg.js"></script>
-<script>
+  new WOW().init();
+  var owl = $("#testimonials-carousel");
 
-var waypoint = new Waypoint({
-  element: document.getElementById('videoGloob'),
-  handler: function(direction) {
-    this.element.play();
-  },
-  offset: '25%'
-});
+  owl.owlCarousel({
 
-changeBackground($("#presentation")[0]);
+    autoPlay: true,
+    items: 3,
+    itemsDesktop : [1000,3], //5 items between 1000px and 901px
+    itemsDesktopSmall : [900,2], // betweem 900px and 601px
+    itemsTablet: [600,1], //2 items between 600 and 0
+    itemsMobile : [600, 1] // itemsMobile disabled - inherit from itemsTablet option
+  });
 
-changeBackground($(".menu__brand")[0]);
+  // Hide Header on on scroll down
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('.header').outerHeight();
 
-$(".burger__patty").each(function(key, value){
-  changeBackground(value);
-});
+  $(window).scroll(function(event){
+      didScroll = true;
+  });
 
-new WOW().init();
-var owl = $("#testimonials-carousel");
+  setInterval(function() {
+      if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+      }
+  }, 200);
 
-owl.owlCarousel({
+  function hasScrolled() {
+      var st = $(this).scrollTop();
 
-  autoPlay: true,
-  items: 3,
-  itemsDesktop : [1000,3], //5 items between 1000px and 901px
-  itemsDesktopSmall : [900,2], // betweem 900px and 601px
-  itemsTablet: [600,1], //2 items between 600 and 0
-  itemsMobile : [600, 1] // itemsMobile disabled - inherit from itemsTablet option
-});
-</script>
-<!-- Main -->
-<script src="js/main.js"></script>
+      // Make sure they scroll more than delta
+      if(Math.abs(lastScrollTop - st) <= delta)
+          return;
+
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight){
+          // Scroll Down
+          $('.header').removeClass('header-pinned').addClass('header-unpinned');
+      } else {
+          // Scroll Up
+          if(st + $(window).height() < $(document).height()) {
+            $('.header').removeClass('header-unpinned').addClass('header-pinned');
+          }
+      }
+
+      lastScrollTop = st;
+  }
+
+  $(function(){
+     $("#leadText").typed({
+       strings: ["Salta a Bordo", "Unete a la aventura", "Atesoramos tus ideas", "Rumbo directo al exito"],
+       typeSpeed: 50,
+       loop: true,
+       showCursor: false,
+       backDelay: 4500,
+       backSpeed: 50
+     });
+   });
+  </script>
+  <!-- Main -->
+  <script src="js/main.js"></script>

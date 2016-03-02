@@ -73,7 +73,7 @@
 			e.preventDefault();
 
 			$('html, body').animate({
-				scrollTop: $( $(this).closest('[data-next="yes"]').next()).offset().top
+				scrollTop: $( $(this).closest('[data-self="yes"]')).offset().top + 65
 			}, 1000, 'easeInOutExpo');
 
 			$('body').scroll();
