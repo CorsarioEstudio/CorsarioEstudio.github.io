@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
-<div id="presentation" class="corsario-cover corsario-cover-style-2 js-full-height p-t-mobile afterNav" data-self="yes">
+<div id="presentation" class="corsario-cover corsario-cover-style-2 js-full-height p-t-mobile" data-self="yes">
   <div class="corsario-overlay"></div>
   <div class="corsario-cover-text">
     <div class="container">
       <div class="row">
         <div class="col-md-12 js-full-height text-center js-full-height back">
-          <div class="ship-illustration" data-stellar-ratio="0.4"></div>
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 full-height js-full-height text-center">
           <div class="corsario-cover-intro">
@@ -21,7 +20,7 @@ layout: default
   </div>
 </div>
 
-<div class="contenido" data-midnight="bg-white">
+<div id="contenido" class="contenido" data-midnight="bg-white">
   <div class="corsario-features-style-2 js-full-height" style="padding-bottom:0;" data-self="yes">
     <div>
       <div>
@@ -72,15 +71,6 @@ layout: default
 
         </div>
       </div>
-
-      <span class="scroll-btn fadeInUp hidden-xs">
-        <a href="#">
-          <span class="ancla">
-            <img src="images/ancla.svg" />
-          </span>
-        </a>
-        <br/>
-      </span>
     </div>
 
     <div class="corsario-testimonial-style-2 js-full-height" data-self="yes">
@@ -180,15 +170,6 @@ layout: default
           </div>
         </div>
       </div>
-
-      <span class="scroll-btn fadeInUp hidden-xs">
-        <a href="#">
-          <span class="ancla">
-            <img src="images/ancla.svg" />
-          </span>
-        </a>
-        <br/>
-      </span>
     </div>
   </div>
   <!-- END page-->
@@ -228,7 +209,7 @@ layout: default
   });
 
   var waypoint2 = new Waypoint({
-    element: $(".contenido")[0],
+    element: $('#contenido')[0],
     handler: function(direction) {
       if (direction == "down") {
         $(".header").addClass("bg-white");
@@ -239,7 +220,17 @@ layout: default
     }
   });
 
-
+  var waypoint3 = new Waypoint({
+    element: document.body,
+    handler: function(direction) {
+      if (direction == "down") {
+        $(".header").removeClass("header-top");
+      }
+      else {
+        $(".header").addClass("header-top");
+      }
+    }
+  });
 
   changeBackground($("#presentation")[0]);
 
