@@ -232,9 +232,7 @@ layout: default
     }
   });
 
-  changeBackground($("#presentation")[0]);
-
-  changeBackground($(".menu__brand")[0]);
+  var bgGradient = new GradientBG([$("#presentation")[0], $(".menu__brand")[0]]);
 
   new WOW().init();
   var owl = $("#testimonials-carousel");
@@ -257,6 +255,13 @@ layout: default
 
   $(window).scroll(function(event){
       didScroll = true;
+  });
+
+  $(".menu__item a").click(function(ev){
+    ev.preventDefault();
+    sessionStorage.setItem("bg-hue", bgGradient.getHue());
+    window.location.href = $(this).attr('href');
+    return true;
   });
 
   setInterval(function() {
