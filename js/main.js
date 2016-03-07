@@ -69,11 +69,22 @@
 
 	// Scroll Next
 	var ScrollNext = function() {
-		$('body').on('click', '.scroll-btn', function(e){
+		$('body').on('click', '.scroll-btn:not(.to-top)', function(e){
 			e.preventDefault();
 
 			$('html, body').animate({
 				scrollTop: $( $(this).closest('[data-self="yes"]')).offset().top
+			}, 1000, 'easeInOutExpo');
+
+			$('body').scroll();
+
+			return false;
+		});
+		$('body').on('click', '.to-top', function(e){
+			e.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $(document.body).offset().top
 			}, 1000, 'easeInOutExpo');
 
 			$('body').scroll();

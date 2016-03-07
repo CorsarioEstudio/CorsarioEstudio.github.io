@@ -19,6 +19,16 @@ header {
   background: white;
   position: absolute;
   z-index: 1000;
+  margin: -10px;
+}
+
+.center-absolute{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .header{
@@ -129,40 +139,70 @@ header {
 }
 
 .fixed{
-  position: fixed;
-  background-color: white;
+  position: fixed !important;
+  bottom: 0;
+  right: 0;
 }
 
-.footer{
-  padding-bottom: 0;
+.footer {
   position: relative;
+  width: 100%;
 }
 
-.footer li{
-  float: left;
-  padding: 0 0.75rem !important;
-  text-align: left;
-  width: auto;
+.footer-logo{
+  padding: 30px;
 }
 
+.footer-logo img{
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+}
+
+ul.corsario-social{
+  list-style: none;
+  width: 100%;
+  height: 25pt;
+}
 .corsario-social li{
-  float:right;
+  color: white;
+  display:inline-block;
+  margin: 0 10px;
+}
+.corsario-social li a{
+  color: white;
+  opacity: 0.4;
 }
 .corsario-social .icon{
-  font-size: 22pt !important;
+  font-size: 25pt !important;
+}
+
+.corsario-social li:hover a{
+  opacity: 1;
 }
 
 div.back{
   position: absolute;
-  z-index: -1;
-  opacity: 0.5;
-  top: 0;
+  z-index: 10;
+  opacity: 0.25;
+  bottom: 0;
+}
+
+div.fore{
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
 }
 
 div.ship-illustration{
   background: url(../images/illustration-ship.svg) no-repeat;
-  background-size: 60%;
-  background-position: right;
+  background-size: auto 55%;
+  background-position: 100% 100%;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
   display: block;
@@ -189,6 +229,15 @@ div.ship-illustration{
     right: 0;
   }
 
+.scroll-btn.to-top .ancla{
+  width: 50px;
+  height: 50px;
+  background-color: #3e3e3e;
+  display: block;
+  transform: rotate(225deg);
+  margin-top: -24.8px;
+}
+
 @media screen and (max-width: 480px) {
   .p-t-mobile
   {
@@ -198,6 +247,10 @@ div.ship-illustration{
   .p-t-2-mobile
   {
     padding-top: 200px !important;
+  }
+
+  div.corsario-cover .corsario-cover-text .cover-text-lead{
+    font-size: 25px;
   }
 
   div.afterNav{
@@ -288,14 +341,29 @@ div.pd-secondary-page{
   position: relative;
 }
 
-#videoGloob{
-  width: 50%;
+video{
+  width: 100%;
   margin: auto;
   display: block;
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;          /* Likely future */
+}
+
+.video-container{
+  width: 280px;
+  height: 280px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.video-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  left: 0;
 }
 
 /*

@@ -1,8 +1,9 @@
 .burger {
-  position: absolute;;
+  position: absolute;
+  padding: 30px;
   z-index: 17;
-  right: 30px;
-  top: 30px;
+  right: 0;
+  top: 0;
   cursor: pointer;
   -webkit-transform: rotateY(0);
           transform: rotateY(0);

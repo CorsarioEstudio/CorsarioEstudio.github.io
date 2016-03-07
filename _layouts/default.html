@@ -22,7 +22,9 @@
 
     <script>
       $(window).ready(function () {
-        $(".loading").fadeOut();
+        setInterval(function() {
+          $(".loading").fadeOut();          
+        }, 500);
       });
     </script>
 
