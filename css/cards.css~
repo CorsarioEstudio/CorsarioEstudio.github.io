@@ -4,44 +4,6 @@ body{
   margin: 10px;
 }
 
-.card{
-    height: 300px;
-}
-
-.card-image {
-    height: 100%;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    background-position: 50% !important;
-}
-
-.card h4{
-    position: absolute;
-    bottom: -70px;
-    text-align: center;
-    width: 100%;
-    left: 0;
-}
-
-.footer .info{
-  text-align: center;
-  padding: 80px;
-  position: absolute;
-  left: 0;
-  z-index: 100;
-}
-
-.footer .info *{
-
-  color: white;
-}
-
-
-.footer .info h2{
-
-  text-decoration: underline;;
-}
-
 header {
   position: fixed;
   top: 0;

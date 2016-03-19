@@ -1,4 +1,4 @@
-GradientBG = function(elementArray) {
+GradientBG = function(elementArray, colorClass) {
   //change color every frame
   //initialise colors ( hue, lightness)
   var initialHue = 360;
@@ -16,6 +16,7 @@ GradientBG = function(elementArray) {
         light: initialLight,
         obj: elementArray[i]
       });
+      $(elementArray[i]).find(".corsario-overlay").addClass(colorClass);
   }
 
   this.getHue = function(){
@@ -38,7 +39,6 @@ GradientBG = function(elementArray) {
       initialLight++;
 
       elements[i].obj.style.background = 'linear-gradient(hsl('+col1 +',70%, 75%) 0%,hsl('+col2 +',90%,75%) 100%)';
-
     }
   }
   setInterval	(changeHue, 64);
