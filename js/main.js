@@ -66,7 +66,7 @@
 			});
 		}
 	};
-	
+
 	// Scroll Next
 	var ScrollNext = function() {
 		$('body').on('click', '.scroll-btn:not(.to-top)', function(e){
@@ -264,11 +264,6 @@
 		offCanvass();
 
 		customHeight();
-
-    if (!Modernizr.cssvhunit) {
-      customFontSize();
-    }
-
 	});
 
 
