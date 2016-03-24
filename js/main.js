@@ -67,6 +67,47 @@
 		}
 	};
 
+	// Custom font size
+	var customFontSize = function() {
+		if ( !isiPhone() || !isiPad() ) {
+			var element;
+
+			$('[data-font-perc]').each(function (key, val){
+				element = $(val);
+
+				if (element.is('[data-trigger-width]'))
+				{
+					if ($(window).width() <= element.attr('data-trigger-width'))
+					{
+						element.css('font-size', $(window).height() * (parseFloat(element.attr('data-font-triggered-perc'))/100));
+						return;
+					}
+				}
+
+				element.css('font-size', $(window).height() * (parseFloat(element.attr('data-font-perc'))/100));
+			});
+
+			$(window).resize(function(){
+				var element;
+
+				$('[data-font-perc]').each(function (key, val){
+					element = $(val);
+
+					if (element.is('[data-trigger-width]'))
+					{
+						if ($(window).width() <= element.attr('data-trigger-width'))
+						{
+							element.css('font-size', $(window).height() * (parseFloat(element.attr('data-font-triggered-perc'))/100));
+							return;
+						}
+					}
+
+					element.css('font-size', $(window).height() * (parseFloat(element.attr('data-font-perc'))/100));
+				});
+			});
+		}
+	};
+
 	// Scroll Next
 	var ScrollNext = function() {
 		$('body').on('click', '.scroll-btn:not(.to-top)', function(e){
@@ -263,7 +304,11 @@
 		imagePopup();
 		offCanvass();
 
-		customHeight();
+		customHeight();		
+
+    if (!Modernizr.cssvhunit) {
+      customFontSize();
+    }
 
 	});
 
