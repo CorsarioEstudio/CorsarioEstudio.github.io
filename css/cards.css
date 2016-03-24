@@ -4,23 +4,75 @@ body{
   margin: 10px;
 }
 
-.card{
-    height: 300px;
+.nube-left{
+  background: url(../images/nube-1.svg) no-repeat;
+  background-position: 0 35%;
+  background-attachment: fixed;
 }
 
-.card-image {
-    height: 100%;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    background-position: 50% !important;
+.nube-right{
+  background: url(../images/nube-2.svg) no-repeat;
+  background-position: 100% 38%;
+  background-attachment: fixed;
+  right: 0;
+  left: auto !important;
 }
 
-.card h4{
+.boshi{
+    background: url(../images/boshi.svg) no-repeat;
+    background-position: 50% 25.5%;
+}
+
+.seccion{
+  padding-top: 30px;
+}
+
+.recuadro{
+  min-height: 300px;
+  border: 1px solid black;
+  padding: 30px;
+  margin: 25px;
+}
+
+  .recuadro img.soft{
+    top: 56px;
+  }
+
+  .recuadro img{
     position: absolute;
-    bottom: -70px;
+    left: 55px;
+    top: 40px;
+  }
+
+  .recuadro ul li{
+    text-align: left;
+    padding: 0 10px;
+    color: #777777;
+  }
+
+.card{
+  height: 300px;
+  width: 300px;
+}
+
+.content-centered div{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+  .content-centered + h4{
     text-align: center;
     width: 100%;
-    left: 0;
+    margin-top: 320px;
+  }
+
+.card-image {
+  height: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-position: 50% !important;
 }
 
 .footer .info{
@@ -31,10 +83,9 @@ body{
   z-index: 100;
 }
 
-.footer .info *{
-
-  color: white;
-}
+  .footer .info *{
+    color: white;
+  }
 
 
 .footer .info h2{
@@ -89,19 +140,19 @@ header {
 }
 
 .header.header-pinned, .header.header-top, .header.header-not-top, header:hover .header{
-    -webkit-transform: translateY(0) translateZ(0);
-    -moz-transform: translateY(0) translateZ(0);
-    -ms-transform: translateY(0) translateZ(0);
-    -o-transform: translateY(0) translateZ(0);
-    transform: translateY(0) translateZ(0);
+  -webkit-transform: translateY(0) translateZ(0);
+  -moz-transform: translateY(0) translateZ(0);
+  -ms-transform: translateY(0) translateZ(0);
+  -o-transform: translateY(0) translateZ(0);
+  transform: translateY(0) translateZ(0);
 }
 
 .header.header-unpinned {
-    -webkit-transform: translateY(-100%) translateZ(0);
-    -moz-transform: translateY(-100%) translateZ(0);
-    -ms-transform: translateY(-100%) translateZ(0);
-    -o-transform: translateY(-100%) translateZ(0);
-    transform: translateY(-100%) translateZ(0);
+  -webkit-transform: translateY(-100%) translateZ(0);
+  -moz-transform: translateY(-100%) translateZ(0);
+  -ms-transform: translateY(-100%) translateZ(0);
+  -o-transform: translateY(-100%) translateZ(0);
+  transform: translateY(-100%) translateZ(0);
 }
 
 .header.bg-white nav .main-logo * {
@@ -129,15 +180,15 @@ header {
   height: 40%;
 }
 
-  .logo img{
-    width: 50%;
-    top: 0px;
-    right: 0px;
-    position: absolute;
-    left: 0px;
-    margin: auto;
-    bottom: 0px;
-  }
+.logo img{
+  width: 50%;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  left: 0px;
+  margin: auto;
+  bottom: 0px;
+}
 
 .main-logo *{
   width: 100%;
@@ -234,6 +285,7 @@ div.fore{
   position: absolute;
   z-index: 10;
   bottom: 0;
+  left: 0;
 }
 
 div.ship-illustration{
@@ -256,16 +308,36 @@ div.ship-illustration{
   margin-top: -25px;
 }
 
-  .scroll-btn .ancla img{
-    transform: rotate(-45deg);
-    height: 80%;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
+.scroll-btn .ancla img{
+  transform: rotate(-45deg);
+  height: 80%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.scroll-btn .ancla-blue{
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: block;
+  transform: rotate(45deg);
+  margin-top: -25px;
+}
+
+.scroll-btn .ancla-blue img{
+  transform: rotate(-45deg);
+  height: 80%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 
 .scroll-btn.to-top .ancla{
   width: 50px;
@@ -339,17 +411,17 @@ div.pd-secondary-page{
   height: auto;
 }
 
-  .logo .svg-container *{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 80%;
-    height: 60%;
-    margin: auto;
-    z-index: 20;
-  }
+.logo .svg-container *{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  z-index: 20;
+}
 
 .svg-gray *{
   fill: #3e3e3e;
@@ -798,8 +870,8 @@ a:hover .lnk-icon-right {
 .scroll-btn > *:focus,
 .scroll-btn > *:active,
 .scroll-btn > *.active {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+opacity: 0.8;
+filter: alpha(opacity=80);
 }*/
 
 .scroll-btn .mouse {
