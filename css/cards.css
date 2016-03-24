@@ -364,6 +364,10 @@ div.ship-illustration{
   height: 50px;
   background-color: #3e3e3e;
   display: block;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
   transform: rotate(225deg);
   margin-top: -24.8px;
 }
