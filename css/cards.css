@@ -4,6 +4,10 @@ body{
   margin: 10px;
 }
 
+#contenido p, #contenido ul{
+  font-size: 1.1em;
+}
+
 .nube-left{
   background: url(../images/nube-1.svg) no-repeat;
   background-position: 0 35%;
@@ -376,14 +380,14 @@ div.ship-illustration{
   color:white;
   padding: 0;
   margin: 0;
-  font-size: 68.333% !important;
+  font-size: 0.8em;
 }
 
 .subtitle {
   color:white;
   padding: 0;
   margin: 0;
-  font-size: 88.333% !important;
+  font-size: 1em;
 }
 
 .corsario-link-wrap ul li a{
@@ -577,7 +581,8 @@ h1 {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 2.2em;
+  /*font-size: 35px;*/
   font-weight: 700;
 }
 
@@ -1446,7 +1451,7 @@ filter: alpha(opacity=80);
   /*min-height: 800px;*/
 }
 .corsario-cover .corsario-cover-text .cover-text-lead {
-  font-size: 49px;
+  font-size: 3.5em;
   /*font-family: "Montserrat", Arial, sans-serif;*/
   font-family: LatoWebBold;
   text-transform: uppercase;
