@@ -23,8 +23,8 @@ body{
 }
 
 .boshi{
-    background: url(../images/boshi.svg) no-repeat;
-    background-position: 50% 25.5%;
+  background: url(../images/boshi.svg) no-repeat;
+  background-position: 50% 25.5%;
 }
 
 .seccion{
@@ -38,21 +38,21 @@ body{
   margin: 25px;
 }
 
-  .recuadro img.soft{
-    top: 56px;
-  }
+.recuadro img.soft{
+  top: 56px;
+}
 
-  .recuadro img{
-    position: absolute;
-    left: 55px;
-    top: 40px;
-  }
+.recuadro img{
+  position: absolute;
+  left: 55px;
+  top: 40px;
+}
 
-  .recuadro ul li{
-    text-align: left;
-    padding: 0 10px;
-    color: #777777;
-  }
+.recuadro ul li{
+  text-align: left;
+  padding: 0 10px;
+  color: #777777;
+}
 
 .card{
   height: 300px;
@@ -66,11 +66,11 @@ body{
   margin: auto;
 }
 
-  .content-centered + h4{
-    text-align: center;
-    width: 100%;
-    margin-top: 320px;
-  }
+.content-centered + h4{
+  text-align: center;
+  width: 100%;
+  margin-top: 320px;
+}
 
 .card-image {
   height: 100%;
@@ -87,9 +87,9 @@ body{
   z-index: 100;
 }
 
-  .footer .info *{
-    color: white;
-  }
+.footer .info *{
+  color: white;
+}
 
 
 .footer .info h2{
@@ -308,11 +308,19 @@ div.ship-illustration{
   height: 50px;
   background-color: #3e3e3e;
   display: block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-top: -25px;
 }
 
 .scroll-btn .ancla img{
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   height: 80%;
   top: 0;
@@ -328,11 +336,19 @@ div.ship-illustration{
   height: 50px;
   background-color: transparent;
   display: block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-top: -25px;
 }
 
 .scroll-btn .ancla-blue img{
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   height: 80%;
   top: 0;
