@@ -4,16 +4,27 @@ body{
   margin: 10px;
 }
 
+.inline{
+  display: inline-block;
+  float: none;
+}
+
+.inline > div{
+  float: right;
+}
+
 .nube-left{
   background: url(../images/nube-1.svg) no-repeat;
   background-position: 0 35%;
   background-attachment: fixed;
+  background-size: 29.5%;
 }
 
 .nube-right{
   background: url(../images/nube-2.svg) no-repeat;
   background-position: 100% 38%;
   background-attachment: fixed;
+  background-size: 29.5%;
   right: 0;
   left: auto !important;
 }
@@ -21,6 +32,7 @@ body{
 .boshi{
   background: url(../images/boshi.svg) no-repeat;
   background-position: 50% 25.5%;
+  background-size: 5%;
 }
 
 .seccion{
@@ -45,15 +57,28 @@ body{
 }
 
 .recuadro img{
-  position: absolute;
-  left: 55px;
-  top: 40px;
+  position: inherit;
+  margin-bottom: 15px;
+}
+
+.recuadro img.soft{
+  top: 56px;
 }
 
 .recuadro ul li{
   text-align: left;
   padding: 0 10px;
   color: #777777;
+}
+
+@media (max-width: 992px) {
+  .recuadro{
+    margin: 0;
+  }
+
+  .recuadro ul{
+    margin: 0 -15px;
+  }
 }
 
 .card{
@@ -93,10 +118,19 @@ body{
   color: white;
 }
 
+.footer .info h5{
+  margin-bottom: 10px;
+}
 
 .footer .info h2{
-
+  margin-top: 60px;
   text-decoration: underline;;
+}
+
+@media (max-width: 768px) {
+  .footer .info{
+    padding: 30px 60px;
+  }
 }
 
 header {
@@ -299,10 +333,17 @@ div.ship-illustration{
   background-size: auto 55%;
   background-position: 100% 100%;
   background-attachment: fixed;
-  width: 100%;
   height: 100%;
   display: block;
   position: absolute;
+  right: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  div.ship-illustration{
+    background-size: 45% auto !important;
+  }
 }
 
 .scroll-btn .ancla{
