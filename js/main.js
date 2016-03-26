@@ -17,11 +17,15 @@
 	// Full height
 	var fullHeight = function() {
 		if ( !isiPhone() || !isiPad() ) {
-			$('.js-full-height').css('min-height', $(window).height());
-			$('.full-height').css('height', $(window).height());
+			var final = $(window).height() > 480 ? $(window).height() : 480;
+
+			$('.js-full-height').css('min-height', final);
+			$('.full-height').css('height', final);
 			$(window).resize(function(){
-				$('.js-full-height').css('min-height', $(window).height());
-				$('.full-height').css('height', $(window).height());
+				var final = $(window).height() > 480 ? $(window).height() : 480;
+
+				$('.js-full-height').css('min-height', final);
+				$('.full-height').css('height', final);
 			});
 		}
 	};
@@ -29,39 +33,58 @@
 	// Custom height
 	var customHeight = function() {
 		if ( !isiPhone() || !isiPad() ) {
-			var element;
+			var element,
+					final;
 
 			$('[data-height-perc]').each(function (key, val){
-				element = $(val);
+				element = $(val)
+
+
+				if (element.attr('data-unleashed') === "true")
+				{
+					final = $(window).height();
+				}
+				else {
+					final = $(window).height() > 480 ? $(window).height() : 480
+				}
 
 				if (element.is('[data-trigger-width]'))
 				{
 					if ($(window).width() <= element.attr('data-trigger-width'))
 					{
-						element.css('height', $(window).height() * (parseFloat(element.attr('data-height-triggered-perc'))/100));
+						element.css('height', final * (parseFloat(element.attr('data-height-triggered-perc'))/100));
 						return;
 					}
 				}
 
-				element.css('height', $(window).height() * (parseFloat(element.attr('data-height-perc'))/100));
+				element.css('height', final * (parseFloat(element.attr('data-height-perc'))/100));
 			});
 
 			$(window).resize(function(){
-				var element;
+				var element,
+						final;
 
 				$('[data-height-perc]').each(function (key, val){
 					element = $(val);
+
+					if (element.attr('data-unleashed') === "true")
+					{
+						final = $(window).height();
+					}
+					else {
+						final = $(window).height() > 480 ? $(window).height() : 480
+					}
 
 					if (element.is('[data-trigger-width]'))
 					{
 						if ($(window).width() <= element.attr('data-trigger-width'))
 						{
-							element.css('height', $(window).height() * (parseFloat(element.attr('data-height-triggered-perc'))/100));
+							element.css('height', final * (parseFloat(element.attr('data-height-triggered-perc'))/100));
 							return;
 						}
 					}
 
-					element.css('height', $(window).height() * (parseFloat(element.attr('data-height-perc'))/100));
+					element.css('height', final * (parseFloat(element.attr('data-height-perc'))/100));
 				});
 			});
 		}

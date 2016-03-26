@@ -1,14 +1,14 @@
 (function() {
-  
+
   var Menu = (function() {
     var burger = document.querySelector('.burger');
     var menu = document.querySelector('.menu');
     var menuList = document.querySelector('.menu__list');
     var brand = document.querySelector('.menu__brand');
     var menuItems = document.querySelectorAll('.menu__item');
-    
+
     var active = false;
-    
+
     var toggleMenu = function() {
       if (!active) {
         menu.classList.add('menu--active');
@@ -18,7 +18,7 @@
         for (var i = 0, ii = menuItems.length; i < ii; i++) {
           menuItems[i].classList.add('menu__item--active');
         }
-        
+
         active = true;
       } else {
         menu.classList.remove('menu--active');
@@ -28,25 +28,31 @@
         for (var i = 0, ii = menuItems.length; i < ii; i++) {
           menuItems[i].classList.remove('menu__item--active');
         }
-        
+
         active = false;
       }
     };
-    
+
     var bindActions = function() {
       burger.addEventListener('click', toggleMenu, false);
+      window.addEventListener('resize', function(){
+        if (burger.offsetWidth == 0 && burger.offsetHeight ==  0){
+          active = true;
+          toggleMenu();          
+        }
+      }, false);
     };
-    
+
     var init = function() {
       bindActions();
     };
-    
+
     return {
       init: init
     };
-    
+
   }());
-  
+
   Menu.init();
-  
+
 }());
