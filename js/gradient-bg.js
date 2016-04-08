@@ -1,7 +1,7 @@
 GradientBG = function(elementArray, colorClass) {
   //change color every frame
   //initialise colors ( hue, lightness)
-  var initialHue = 360;
+  var initialHue = 90;
   var initialLight = 0;
   var elements = [];
 
